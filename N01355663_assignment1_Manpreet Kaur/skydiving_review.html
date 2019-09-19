@@ -5,6 +5,57 @@
     <title></title>
 </head>
 <body>
-
+  <h1>SKYDIVING REVIEW</h1>
+   <form method="GET" action="https://postman-echo.com/get">
+       <section>
+           <label>How does skydiving feel?</label>
+           <input type="text" id="html_skydiving_feeling" name="html_skydiving_feeling" />
+       </section>
+       <section>
+           <label>How many persons were with you?</label>
+           <div>
+               <input type="radio" id="html_person_option_1" name="html_skydiving_personaccompanying" value="one" /><label for="html_person_option_1">ONE</label>
+           </div>
+           <div>
+               <input type="radio" id="html_person_option_2" name="html_skydiving_personaccompanying" value="two" /><label for="html_person_option_2">TWO</label>
+           </div>
+           <div>
+               <input type="radio" id="html_person_option_3" name="html_skydiving_personaccompanying" value="more than two" /><label for="html_person_option_3">MORE THAN TWO</label> 
+           </div>
+       </section>
+       <section>
+           <label>What was altitude from where you jumped?</label>
+           <div>
+               <input type="radio" id="html_altitude_option_1" name="html_skydiving_jumpingaltitude" value="5,500 feet" /><label for="html_altitude_option_1">5,500 FEET</label>
+           </div>
+           <div>
+               <input type="radio" id="html_altitude_option_2" name="html_skydiving_jumpingaltitude" value="10,000 feet" /><label for="html_altitude_option_2">10,000 FEET</label>
+           </div>
+           <div>
+               <input type="radio" id="html_altitude_option_3" name="html_skydiving_jumpingaltitude" value="14,000 feet" /><label for="html_altitude_option_3">14,000 FEET</label>
+           </div>
+       </section>
+       <section>
+           <h2>What kind of aircraft was used when you did skydiving?</h2>
+           <div><input type="checkbox" value="helicopters" id="html_skydiving_aircrafttype_1" name="html_skydiving_aircrafttype_1"/><label for="html_skydiving_aircrafttype_1">Helicopters</label></div>
+           <div><input type="checkbox" value="hot air balloons" id="html_skydiver_aircrafttype_2" name="html_skydiving_aircrafttype_2"/><label for="html_skydiving_aircrafttype_2">Hot air balloons</label></div>
+       </section>
+       <section>
+           <h2>what was it like when the plane door opened?</h2>
+           <div><input type="checkbox" value="exciting" id="html_skydiving_planedooropened_1" name="html_skydiving_planedooropened_1"/><label for="html_skydiving_planedooropened_1">Exciting</label></div>
+           <div><input type="checkbox" value="terrifying" id="html_skydiving_planedooropened_2" name="html_skydiving_planedooropened_2"/><label for="html_skydiving_planedooropened_2">Terrifying</label></div>
+       </section>
+       <section>
+           <h2>Which is the best place to do skydiving?</h2>
+           <select id="html_skidiving_bestplace" name="html_skydiving_bestplace">
+               <option value="dubai">Dubai</option>
+               <option value="nepal">Nepal</option>
+               <option value="spain">Spain</option>
+           </select>
+       </section>
+       <section>
+           <input type="submit" value="submit" />
+       </section>
+   </form>
 </body>
 </html>
