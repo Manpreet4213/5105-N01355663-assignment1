@@ -56,5 +56,23 @@ namespace N01355663_assignment1_Manpreet_Kaur {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBoxList aspx_skydiving_aircraft;
+        
+        /// <summary>
+        /// aspx_skydiving_planedooropened control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList aspx_skydiving_planedooropened;
+        
+        /// <summary>
+        /// aspx_skydiving_bestplace control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList aspx_skydiving_bestplace;
     }
 }

@@ -4,11 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>SKYDIVING REVIEW</title>
 </head>
 <body>
     <form id="form1" runat="server">
-        <h1>Skydiving Review</h1>
+      <div>
+        <h1>SKYDIVING REVIEW</h1>
         <section>
             <label>How does skydiving feel?</label>
             <asp:TextBox runat="server" ID="aspx_skydiving_feeling" ></asp:TextBox>
@@ -22,8 +23,8 @@
                     <asp:ListItem Text="MORE THAN TWO" Value="More than two"></asp:ListItem>
                 </asp:RadioButtonList> 
             </div>
-        </section>
-        <section>
+         </section>
+         <section>
             <label>What was altitude from where you jumped?</label>
             <div>
                 <asp:RadioButtonList runat="server" ID="aspx_skydiving_jumpingaltitude">
@@ -32,17 +33,33 @@
                     <asp:ListItem Text="14,000 FEET" Value="14,000 feet"></asp:ListItem>
                 </asp:RadioButtonList>
             </div>
-        </section>
-        <section>
-            <h2>What kind of aircraft was used when you did skydiving?</h2>
+         </section>
+         <section>
+            <label>What kind of aircraft was used when you did skydiving?</label>
             <asp:CheckBoxList ID="aspx_skydiving_aircraft" runat="server">
                 <asp:ListItem Text="Helicopters" Value="helicopters"></asp:ListItem>
                 <asp:ListItem Text="Hot air ballons" Value="hot air ballons"></asp:ListItem>
             </asp:CheckBoxList>
-        </section>
-        <section></section>
-            
-        
-    </form>
+         </section>
+         <section>
+            <label>What was it like when the plane door opened?</label>
+            <asp:CheckBoxList ID="aspx_skydiving_planedooropened" runat="server">
+                <asp:ListItem Text="Exciting" Value="exciting"></asp:ListItem>
+                <asp:ListItem Text="Terrifying" Value="terrifying"></asp:ListItem>
+            </asp:CheckBoxList>
+          </section>
+          <section>
+            <label>Which is the best place to do skydiving?</label>
+            <asp:DropDownList runat="server" ID="aspx_skydiving_bestplace">
+                <asp:ListItem Text="Dubai" Value="dubai"></asp:ListItem>
+                <asp:ListItem Text="Nepal" Value="nepal"></asp:ListItem>
+                <asp:ListItem Text="Spain" Value="spain"></asp:ListItem>
+            </asp:DropDownList>
+         </section> 
+         <section>
+            <asp:Button runat="server" Text="submit" />
+         </section>
+        </div>
+     </form>
 </body>
 </html>
