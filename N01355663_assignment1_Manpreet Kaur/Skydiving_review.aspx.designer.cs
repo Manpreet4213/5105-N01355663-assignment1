@@ -22,57 +22,57 @@ namespace N01355663_assignment1_Manpreet_Kaur {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// aspx_skydiving_feeling control.
+        /// skydiving_place control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox aspx_skydiving_feeling;
+        protected global::System.Web.UI.WebControls.TextBox skydiving_place;
         
         /// <summary>
-        /// aspx_skydiving_personaccompanying control.
+        /// skydiving_personcount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList aspx_skydiving_personaccompanying;
+        protected global::System.Web.UI.WebControls.RadioButtonList skydiving_personcount;
         
         /// <summary>
-        /// aspx_skydiving_jumpingaltitude control.
+        /// skydiving_bestplace control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList aspx_skydiving_jumpingaltitude;
+        protected global::System.Web.UI.WebControls.DropDownList skydiving_bestplace;
         
         /// <summary>
-        /// aspx_skydiving_aircraft control.
+        /// skydiver_phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList aspx_skydiving_aircraft;
+        protected global::System.Web.UI.WebControls.TextBox skydiver_phone;
         
         /// <summary>
-        /// aspx_skydiving_planedooropened control.
+        /// skydiving_reviewrating control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList aspx_skydiving_planedooropened;
+        protected global::System.Web.UI.WebControls.TextBox skydiving_reviewrating;
         
         /// <summary>
-        /// aspx_skydiving_bestplace control.
+        /// skydivingbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList aspx_skydiving_bestplace;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl skydivingbox;
     }
 }

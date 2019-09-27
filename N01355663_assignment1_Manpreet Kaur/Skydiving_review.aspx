@@ -11,53 +11,45 @@
       <div>
         <h1>SKYDIVING REVIEW</h1>
         <section>
-            <label>How does skydiving feel?</label>
-            <asp:TextBox runat="server" ID="aspx_skydiving_feeling" ></asp:TextBox>
+            <label>Where you did skydiving?</label>
+            <asp:TextBox runat="server" ID="skydiving_place" ></asp:TextBox>
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter your skydiving place" ControlToValidate="skydiving_place"></asp:RequiredFieldValidator>
         </section>
         <section>
             <label>How many persons were with you?</label>
-            <div>
-                <asp:RadioButtonList runat="server" ID="aspx_skydiving_personaccompanying">
-                    <asp:ListItem Text="ONE" Value="one"></asp:ListItem>
-                    <asp:ListItem Text="TWO" Value="Two"></asp:ListItem>
-                    <asp:ListItem Text="MORE THAN TWO" Value="More than two"></asp:ListItem>
-                </asp:RadioButtonList> 
-            </div>
-         </section>
-         <section>
-            <label>What was altitude from where you jumped?</label>
-            <div>
-                <asp:RadioButtonList runat="server" ID="aspx_skydiving_jumpingaltitude">
-                    <asp:ListItem Text="5,500 FEET" Value="5,500 feet"></asp:ListItem>
-                    <asp:ListItem Text="10,000 FEET" Value="10,000 feet"></asp:ListItem>
-                    <asp:ListItem Text="14,000 FEET" Value="14,000 feet"></asp:ListItem>
-                </asp:RadioButtonList>
-            </div>
-         </section>
-         <section>
-            <label>What kind of aircraft was used when you did skydiving?</label>
-            <asp:CheckBoxList ID="aspx_skydiving_aircraft" runat="server">
-                <asp:ListItem Text="Helicopters" Value="helicopters"></asp:ListItem>
-                <asp:ListItem Text="Hot air ballons" Value="hot air ballons"></asp:ListItem>
-            </asp:CheckBoxList>
-         </section>
-         <section>
-            <label>What was it like when the plane door opened?</label>
-            <asp:CheckBoxList ID="aspx_skydiving_planedooropened" runat="server">
-                <asp:ListItem Text="Exciting" Value="exciting"></asp:ListItem>
-                <asp:ListItem Text="Terrifying" Value="terrifying"></asp:ListItem>
-            </asp:CheckBoxList>
-          </section>
-          <section>
+            <asp:RadioButtonList runat="server" ID="skydiving_personcount">
+                <asp:ListItem Text="ONE" Value="one"></asp:ListItem>
+                <asp:ListItem Text="TWO" Value="two"></asp:ListItem>
+                <asp:ListItem Text="MORE THAN TWO" Value="more than two"></asp:ListItem>
+            </asp:RadioButtonList>
+           <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please select an option" ControlToValidate="skydiving_personcount"></asp:RequiredFieldValidator>
+        </section>
+        <section>
             <label>Which is the best place to do skydiving?</label>
-            <asp:DropDownList runat="server" ID="aspx_skydiving_bestplace">
+            <asp:DropDownList runat="server" ID="skydiving_bestplace">
                 <asp:ListItem Text="Dubai" Value="dubai"></asp:ListItem>
                 <asp:ListItem Text="Nepal" Value="nepal"></asp:ListItem>
                 <asp:ListItem Text="Spain" Value="spain"></asp:ListItem>
             </asp:DropDownList>
-         </section> 
+            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter a best place (going by yourself is not an option)!" ControlToValidate="skydiving_bestplace"></asp:RequiredFieldValidator>
+         </section>  
          <section>
-            <asp:Button runat="server" Text="submit" />
+            <label>Can you provide me your phone number in case of any type of query left? i.e. (999) 212 8350:</label>
+            <asp:TextBox runat="server" ID="skydiver_phone"></asp:TextBox>
+            <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ControlToValidate="skydiver_phone" ValidationExpression="[(]{0,1}[0-9]{3}[)]{0,1}(\s*|\-+)[0-9]{3}(\s*|\-+)[0-9]{4}" ErrorMessage="Please enter a valid phone number."></asp:RegularExpressionValidator>
+            <!--  I got this regular expression validator from your example-->
+         </section>
+         <section>
+              <label>Please provide your skydiving experience a star rating number. (maximum 5)</label>
+              <asp:TextBox runat="server" ID="skydiving_reviewrating"></asp:TextBox>
+              <asp:RangeValidator runat="server" EnableClientScript="true" ControlToValidate="skydiving_reviewrating" ErrorMessage="Please enter a rating number between 0 and 5." MinimumValue="0" MaximumValue="5" ></asp:RangeValidator>
+         </section>
+         <section>
+            <asp:ValidationSummary runat="server" ShowSummary="true" />
+         </section>
+          <section id="skydivingbox" runat="server"></section>
+         <section>
+            <input type="submit" value="submit" />
          </section>
         </div>
      </form>
