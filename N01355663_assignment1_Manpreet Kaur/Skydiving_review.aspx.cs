@@ -24,11 +24,11 @@ namespace N01355663_assignment1_Manpreet_Kaur
                     string Skydiver_Phone = skydiver_phone.Text;
                     int Skydiving_Reviewrating =Convert.ToInt32(skydiving_reviewrating.Text);
 
-                    skydivingbox.InnerHtml = "Thank you for RSVPing! Your Summary is as follow: <br>";
+                    skydivingbox.InnerHtml = "Thank you for information.Your summary is as follow: <br>";
 
 
                     skydivingbox.InnerHtml += " Skydiving Place: " + Skydiving_Place + "<br>";
-                    skydivingbox.InnerHtml += "skydiving Personcount: " + Skidiving_Personcount + "<br>";
+                    skydivingbox.InnerHtml += "Skydiving Personcount: " + Skidiving_Personcount + "<br>";
                     skydivingbox.InnerHtml += " Best Place: " + Skydiving_Bestplace + "<br>";
                     skydivingbox.InnerHtml += " We will contact you in case of any query left at: " + Skydiver_Phone + "<br>";
                     skydivingbox.InnerHtml += " You have given rating " +Skydiving_Reviewrating.ToString() + " star(s) " + "<br>";
